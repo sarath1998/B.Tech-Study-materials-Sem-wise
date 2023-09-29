@@ -1,0 +1,6 @@
+SCOPE RESOLUTION OPERATOR(::)
+member access operator(.)
+conditional operator(?:)
+sizeof()
+
+..can not be overloaded

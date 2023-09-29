@@ -1,0 +1,132 @@
+						            JAVA
+
+There exists, static block, static variable, static function in java.
+
+In java, static/class variables is/are can be declared only inside a class scope, but not inside any function.
+
+A static variable declared will be intialized to its default values based on the data type.(Applicable in c++ also).
+
+Static functions can only access static data & can call only other static functions. A static function can not be called by any
+object reference.
+
+For ex, main() in java is being called without any object referecne. Therefore, if any static function would like to invoke()
+another function, then both the functions need to be declared static.
+
+(if any funtion call from main() would like to occur without any reference, then the function must be a static one).
+
+Eg :
+
+public class sample
+{
+public static void func1()
+{
+ System.out.println("Inside static func1()");
+  func3();
+}
+
+public void func2()
+{
+System.out.println("Inside non static func2()");
+func4(); //non static func()
+}
+
+public static void func3()
+{
+System.out.println("static func1(), calling func3()");
+}
+
+public void func4()
+{
+System.out.println("func2(), a non static function can invoke another non static function");
+}
+
+
+public static void main(String s[])
+{
+func1(); //static function
+sample s = new sample();
+s.func2(); //func2-- non static function
+}
+}
+
+Static blocks are meant for changing/initializing the values of static variable/s when, 
+
+(i).if static varibales are just declared at class scope(default value is assigned by default) 
+     need to initialize the static variable with other than default value.  
+
+There can be multiple static blocks in a class, and the execution is based on the order of appearence.
+
+
+
+
+
+
+							C++/C
+
+
+Static Variables : Variables in a function, Variables in a class
+Static Members of Class : Class objects and Functions in a class
+
+Inside a function : useful for implementing routines in C/C++ or any other application 
+                    where previous state of function needs to be stored.
+
+
+i.e., scope of the "static var inside a function" will be limited to that function only, unlike a class variable 
+whose scope is entire class
+
+#include<iostream>
+using namespace std;
+
+voud func1()
+{
+static int count; //by def -- count = 0;
+count++;
+cout<<count<<endl;
+}
+
+
+int main()
+{
+for(int i=1; i<5; i++)
+func1();
+}
+
+o/p : 1 2 3 4 5
+
+
+Note :  in the above eg,  "count" var is not accessible outside the func1().
+
+
+Inside a class : The variables declared as static are initialized only once as they are allocated space in separate static storage so, 
+                 the static variables in a class are shared by the objects. There can not be multiple copies of same static variables 
+                  for different objects. Also because of this reason static variables can not be initialized using constructors.
+
+Eg :
+
+#include<iostream> 
+using namespace std; 
+  
+class GfG 
+{ 
+public: 
+    static int i; 
+      
+    GfG() 
+    { 
+        // Do nothing 
+    }; 
+}; 
+  
+int GfG::i = 1; //variable intialization
+  
+int main() 
+{ 
+    GfG obj; 
+    // prints value of i 
+    cout << obj.i;  
+} 
+
+-----------------------------------------------------------------------------
+
+https://www.geeksforgeeks.org/static-keyword-cpp/
+
