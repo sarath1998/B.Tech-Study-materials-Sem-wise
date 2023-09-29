@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app>  
+   <servlet>
+      <servlet-name>lf</servlet-name>
+      <servlet-class>Life</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>lf</servlet-name>
+        <url-pattern>/lif</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+      <servlet-name>sum</servlet-name>
+      <servlet-class>Add</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>sum</servlet-name>
+        <url-pattern>/ad</url-pattern>
+    </servlet-mapping>
+
+   <servlet>
+      <servlet-name>inp</servlet-name>
+      <servlet-class>HelloForm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>inp</servlet-name>
+        <url-pattern>/form</url-pattern>
+    </servlet-mapping>
+
+
+ <servlet>
+      <servlet-name>gt</servlet-name>
+      <servlet-class>Get</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>gt</servlet-name>
+        <url-pattern>/get</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+      <servlet-name>pt</servlet-name>
+      <servlet-class>Post</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pt</servlet-name>
+        <url-pattern>/put</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+      <servlet-name>ck1</servlet-name>
+      <servlet-class>Cook</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ck1</servlet-name>
+        <url-pattern>/ck</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+      <servlet-name>ck2</servlet-name>
+      <servlet-class>Cook2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ck2</servlet-name>
+        <url-pattern>/ck2</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+      <servlet-name>init</servlet-name>
+      <servlet-class>Init</servlet-class>
+		<init-param>
+		  <param-name>x</param-name>
+		  <param-value>30</param-value>
+		</init-param>
+
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>init</servlet-name>
+        <url-pattern>/int</url-pattern>
+    </servlet-mapping>
+
+
+ <servlet>
+      <servlet-name>vl</servlet-name>
+      <servlet-class>Validate</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>vl</servlet-name>
+        <url-pattern>/val</url-pattern>
+    </servlet-mapping>
+
+
+ <servlet>
+      <servlet-name>s1</servlet-name>
+      <servlet-class>Session</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s1</servlet-name>
+        <url-pattern>/ses1</url-pattern>
+    </servlet-mapping>
+
+
+ <servlet>
+      <servlet-name>s2</servlet-name>
+      <servlet-class>Session2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/ses2</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
+
+
+

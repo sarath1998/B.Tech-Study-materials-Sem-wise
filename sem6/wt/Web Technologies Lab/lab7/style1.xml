@@ -1,0 +1,60 @@
+<?xml-stylesheet type="text/xsl" href="booklist1.xsl"?>
+<Book-list>
+<Book>
+	<title> Harry Potter</title>
+	<author> J.K.Rowling </author>
+	<isbn> 26 </isbn>
+	<publisher> Bloomsbury </publisher>
+	<Edition>3</Edition>
+	<price>55$</price>
+</Book>
+<Book>
+	<title> The Da Vinci Code </title>
+	<author> Dan Brown </author>
+	<isbn> 36 </isbn>
+	<publisher> Doubleday </publisher>
+	<Edition>1</Edition>
+	<price>54$</price>
+</Book>
+<Book>
+	<title> The 100 </title>
+	<author> Kass Morgan</author>
+	<isbn> 46 </isbn>
+	<publisher> Little</publisher>
+	<Edition>3</Edition>
+	<price>5$</price>
+</Book>
+<Book>
+	<title> A Brief History of Time:</title>
+	<author>  Stephen Hawking </author>
+	<isbn> 56 </isbn>
+	<publisher> Bantam Books </publisher>
+	<Edition>3</Edition>
+	<price>5$</price>
+</Book>
+</Book-list>
+
+<xsl:stylesheet version="1.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns="http://www.w3.org/1999/xhtml">
+
+<xsl:template match="Book-list">
+ <h1> Books Information : </h1><br/>
+
+ <table border="5">
+ <tr>
+ <th style="color:grey"> Title</th><th>Author </th><th>ISBN number </th> <th> Publisher name </th><th> Edition Name </th> <th> Price </th>
+ </tr>
+   <xsl:for-each select="Book">
+ <tr style="color:red">
+ <td > <xsl:value-of select="title"/></td>
+<td style="color:green;font-weight:bold">  <xsl:value-of select="author"/></td>
+<td>  <xsl:value-of select="isbn"/></td>
+<td>  <xsl:value-of select="publisher"/></td>
+<td>  <xsl:value-of select="Edition"/></td>
+<td>  <xsl:value-of select="price"/></td>
+</tr>
+</xsl:for-each>
+</table>
+</xsl:template>
+</xsl:stylesheet>

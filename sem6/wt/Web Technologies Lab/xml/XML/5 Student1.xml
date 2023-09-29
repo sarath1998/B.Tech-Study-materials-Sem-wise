@@ -1,0 +1,28 @@
+
+<?xml-stylesheet type="text/xsl" 
+href="Std1.xsl"?>
+<Student-list>
+<Student>
+	<name> ABC</name>
+	<branch> CSE </branch>
+	<age> 20 </age>
+	<college> GITAM </college>
+</Student>
+
+<Student>
+	<name> PQR </name>
+	<branch> IT </branch>
+	<age> 26 </age>
+	<college> GITAM </college>
+</Student>
+
+<Student>
+	<name> ABC </name>
+	<branch> EEE </branch>
+	<age> 24 </age>
+	<college> GU </college>
+</Student>
+
+</Student-list>
+
+ 

@@ -1,0 +1,26 @@
+<?xml-stylesheet type="text/xsl" href="Std4.xsl"?>
+<Student-list>
+<Student>
+	<name> XYZ </name>
+	<branch> CSE </branch>
+	<age> 26 </age>
+	<college> GITAM </college>
+</Student>
+
+<Student>
+	<name> MNO </name>
+	<branch> IT </branch>
+	<age> 30 </age>
+	<college> GIS </college>
+</Student>
+
+<Student>
+	<name> ABC </name>
+	<branch> EEE </branch>
+	<age> 24 </age>
+	<college> GU </college>
+</Student>
+
+</Student-list>
+
+ 

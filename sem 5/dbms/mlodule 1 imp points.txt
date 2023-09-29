@@ -1,0 +1,30 @@
+RDBMS is the basic(frame work) of sql
+
+database objects----- tables
+
+table is the most common and simplest form of data storage in a RDBMS
+
+field-- small entites/columns in a table.
+
+constraints-- rules enforced on data coloumns on a table
+
+-->they enable the accuracy and reliability of the data in the data base
+
+--->constraints are applied to either columns level or table level
+
+Eg: NOT NULL, DEFAULT, UNIQUE, Primary key, Forign Key
+
+datamodels define the logical structure of a data base
+
+--> how data is connected to each other and how they are processed and stored inside the system.
+
+Relational Model
+
+--> relations are stored in the form of tables
+-->Relations(tables) can be normalized.
+
+-->In normalized relations, values saved are atomic values.
+
+-->Each row in a relation contains a unique value.
+
+-->Each column in a relation contains values from a same domain

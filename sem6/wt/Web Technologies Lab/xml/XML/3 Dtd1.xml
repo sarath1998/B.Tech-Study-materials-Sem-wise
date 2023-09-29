@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE student_list [
+
+  <!ELEMENT student_list (student+)>
+  <!ELEMENT student (name,age?,cname,address)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT age (#PCDATA)>
+  <!ELEMENT cname (#PCDATA)>
+  <!ELEMENT address (street?,city)>
+  <!ELEMENT street (#PCDATA)>
+  <!ELEMENT city (#PCDATA)>
+  
+  <!ATTLIST name type CDATA #IMPLIED>
+  <!ENTITY GIT "GITAM INSTITUTE OF TECHNOLOGY">
+]>
+
+ <student_list>
+  <student>
+	<name type="first"> Xyz </name>
+	<age> 20 </age>
+	<cname>&GIT;</cname>
+	<addr>
+		<street> ABC </street>
+		<city> AAA </city>
+ 	</addr>
+  </student>
+
+  <student>
+	<name> MNO </name>
+	<aeg> 20 </aeg>
+	<cname>&GIT;</cname>
+	<addr>
+		<city> AAA </city>
+ 	</addr>
+  </student>
+</student_list>
+
+	
+
+

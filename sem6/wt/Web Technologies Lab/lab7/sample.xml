@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<student>
+ <name> Xyz </name>
+ <age> 22  </age>
+ <address>
+	<street> Abc </street>
+	<village> Xyz </village>
+	<dist> xxx </dist>
+ </address>
+</student>

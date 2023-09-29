@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="css2.css"?>
+
+<furniture-list xmlns:h="http://www.w3.org/1999/xhtml">
+		
+
+
+<furniture>
+
+<h:table>
+ <h:tr>
+  <h:td> <name> Abc </name> </h:td>
+  <h:td> <cost> 200 </cost> </h:td>
+ </h:tr>
+<h:tr>
+  <h:td> <name> Abc </name> </h:td>
+  <h:td> <cost> 200 </cost> </h:td>
+ </h:tr>
+<h:tr>
+  <h:td> <name> Abc </name> </h:td>
+  <h:td> <cost> 200 </cost> </h:td>
+ </h:tr>
+</h:table>
+
+</furniture>
+
+</furniture-list>

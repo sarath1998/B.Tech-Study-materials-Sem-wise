@@ -1,0 +1,15 @@
+<?xml-stylesheet?>
+<!DOCTYPE note [
+
+<!ELEMENT note (to,from,heading,body)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (CDATA)>
+<!ELEMENT body (#PCDATA)>
+]>
+<note>
+	<to> Vishal Bharath </to>
+	<from> Sarath </from>
+	<heading> Sollu </heading>
+	<body> Vishal! na devudu </body>
+</note>

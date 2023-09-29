@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE student_list[
+ <!ELEMENT student_list (student+)>
+ <!ELEMENT student (name,age,address)>
+ <!ELEMENT name (#PCDATA)>
+ <!ELEMENT age (#PCDATA)>	
+ <!ELEMENT address (street,village,dist)>
+ <!ELEMENT street (#PCDATA)>
+ <!ELEMENT village (#PCDATA)>
+ <!ELEMENT dist (#PCDATA)>
+ <!ATTLIST age units CDATA "years">
+ <!ENTITY git "GITAM INSTITUTE">
+]>
+<?xml-stylesheet type="text/css" href="mycss.css"?>
+<student-list>
+<student>
+ <name> &git; </name>
+ <age units=""> 22  </age>
+ <address>
+	<street> Abc </street>
+	<village> Xyz </village>
+	<dist> xxx </dist>
+ </address>
+</student>
+<student>
+ <name> Xyz </name>
+ <age units="years"> 22  </age>
+ <address>
+	<street> Abc </street>
+	<village> Xyz </village>
+	<dist> xxx </dist>
+ </address>
+</student>
+<student>
+ <name> Xyz </name>
+ <age units="years"> 22  </age>
+ <address>
+	<street> Abc </street>
+	<village> Xyz </village>
+	<dist> xxx </dist>
+ </address>
+</student>
+</student-list>

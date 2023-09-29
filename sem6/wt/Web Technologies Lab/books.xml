@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="book.xsl"?>
+<!DOCTYPE book SYSTEM "bookdet.dtd">
+<bookdetails>
+<book>
+<title>Programming with C</title>
+<author>Balaguruswamy</author>
+<isbn>9876435353</isbn>
+<publisher>BG Publications</publisher>
+<edition>4th</edition>
+<price>50$</price>
+</book>
+<book>
+<title>Artificial Intelligence: A Modern Approach</title>
+<author>Stuart J. Russell</author>
+<isbn>9834556343</isbn>
+<publisher>Princeton Hall</publisher>
+<edition>6th</edition>
+<price>$39</price>
+</book>
+<book>
+<title>Developing apps for Android</title>
+<author>Karthik Veenam</author>
+<isbn>9876543220</isbn>
+<publisher>KV Publications</publisher>
+<edition>3th</edition>
+<price>$8.95</price>
+</book>
+<book>
+<title>HTML5: Up and Running</title>
+<author>Mark Pilgrim</author>
+<isbn>1234567890</isbn>
+<publisher>O'REILLY</publisher>
+<edition>1st</edition>
+<price>$17.99</price>
+</book>
+</bookdetails>
